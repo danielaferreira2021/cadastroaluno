@@ -1,0 +1,22 @@
+<h3>Agenda</h3>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>RU</th>
+            <th>Curso</th>
+            <th>Data de Nascimento</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr *ngFor="let aluno of alunos">
+            <td>{{ aluno.nome }}</td>
+            <td>{{ aluno.ru }}</td>
+            <td>{{ aluno.curso }}</td>
+            <td>{{ aluno.dataNascimento }}</td>
+        </tr>
+    </tbody>
+</table>

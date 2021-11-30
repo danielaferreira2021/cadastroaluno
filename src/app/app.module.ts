@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { AlunoListaComponent } from './aluno.lista.component';
+import { AlunoService } from './aluno.service';
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AlunoListaComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    AlunoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
